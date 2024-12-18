@@ -10,7 +10,7 @@ const WorkFlow = () => {
         text-center mt-6 tracking-wide'>Accelerate your
                 <span className='bg-gradient-to-r from-orange-500 
                 to-orange-800 text-transparent bg-clip-text'>
-                    {' '}coding workflow.
+                    {' '}coding workflow
                 </span>
             </h2>
             <div className="flex flex-wrap justify-center">
