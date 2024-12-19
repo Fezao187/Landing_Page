@@ -1,9 +1,6 @@
-import { BotMessageSquare } from "lucide-react";
-import { BatteryCharging } from "lucide-react";
+import { BotMessageSquare, Brush, EyeClosed, Heart } from "lucide-react";
 import { Fingerprint } from "lucide-react";
 import { ShieldHalf } from "lucide-react";
-import { PlugZap } from "lucide-react";
-import { GlobeLock } from "lucide-react";
 
 import user1 from "../assets/profile-pictures/user1.jpg";
 import user2 from "../assets/profile-pictures/user2.jpg";
@@ -12,88 +9,108 @@ import user4 from "../assets/profile-pictures/user4.jpg";
 import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
 
+import img1 from "../assets/gallery/img (1).jpg";
+import img2 from "../assets/gallery/img (2).jpg";
+import img3 from "../assets/gallery/img (3).jpg";
+import img4 from "../assets/gallery/img (4).jpg";
+import img5 from "../assets/gallery/img (5).jpg";
+import img6 from "../assets/gallery/img (6).jpg";
+import img7 from "../assets/gallery/img (7).jpg";
+import img8 from "../assets/gallery/img (8).jpg";
+import img9 from "../assets/gallery/img (9).jpg";
+
 export const navItems = [
-  { label: "Features", href: "#" },
-  { label: "Workflow", href: "#" },
-  { label: "Pricing", href: "#" },
-  { label: "Testimonials", href: "#" },
+  { label: "Services", href: "#service" },
+  { label: "Gallery", href: "#work" },
+  { label: "Pricing", href: "#price" },
+  { label: "Testimonials", href: "#test" },
 ];
 
 export const testimonials = [
   {
-    user: "John Doe",
-    company: "Stellar Solutions",
-    image: user1,
-    text: "I am extremely satisfied with the services provided. The team was responsive, professional, and delivered results beyond my expectations.",
+    user: "Noluthando Mkhubo",
+    image: img1,
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
   },
   {
-    user: "Jane Smith",
-    company: "Blue Horizon Technologies",
-    image: user2,
-    text: "I couldn't be happier with the outcome of our project. The team's creativity and problem-solving skills were instrumental in bringing our vision to life",
+    user: "Honeshma Mabunda",
+    image: img2,
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
   },
   {
-    user: "David Johnson",
-    company: "Quantum Innovations",
-    image: user3,
-    text: "Working with this company was a pleasure. Their attention to detail and commitment to excellence are commendable. I would highly recommend them to anyone looking for top-notch service.",
+    user: "Lwaluhle Kunene",
+    image: img3,
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
   },
   {
-    user: "Ronee Brown",
-    company: "Fusion Dynamics",
-    image: user4,
-    text: "Working with the team at XYZ Company was a game-changer for our project. Their attention to detail and innovative solutions helped us achieve our goals faster than we thought possible. We are grateful for their expertise and professionalism!",
+    user: "Jane Doe",
+    image: img4,
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
   },
   {
-    user: "Michael Wilson",
-    company: "Visionary Creations",
-    image: user5,
-    text: "I am amazed by the level of professionalism and dedication shown by the team. They were able to exceed our expectations and deliver outstanding results.",
+    user: "Kristine Wilson",
+    image: img5,
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
   },
   {
     user: "Emily Davis",
-    company: "Synergy Systems",
-    image: user6,
-    text: "The team went above and beyond to ensure our project was a success. Their expertise and dedication are unmatched. I look forward to working with them again in the future.",
+    image: img6,
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
   },
 ];
 
 export const features = [
   {
-    icon: <BotMessageSquare />,
-    text: "Drag-and-Drop Interface",
+    icon: <EyeClosed/>,
+    text: "Natural Glam",
     description:
-      "Easily design and arrange your VR environments with a user-friendly drag-and-drop interface.",
+      "Light coverage foundation, powder highlighting and contouring "+
+      "Eyebrows (wing or straight), Liner and lashes, lined Lipgloss "+
+      "No eyeshadow.",
   },
   {
-    icon: <Fingerprint />,
-    text: "Multi-Platform Compatibility",
+    icon: <Brush/>,
+    text: "Soft Glam",
     description:
-      "Build VR applications that run seamlessly across multiple platforms, including mobile, desktop, and VR headsets.",
+      "Foundation, Highlighting and Contouring, Eyebrows, Lashes, Nude Lip Combo "+
+      "or Gloss, Earth Tones.",
   },
   {
-    icon: <ShieldHalf />,
-    text: "Built-in Templates",
+    icon: <Heart/>,
+    text: "Full Glam",
     description:
-      "Jumpstart your VR projects with a variety of built-in templates for different types of applications and environments.",
+      "Foundation, Highlighting and Contouring, Eyebrows, Lashes, Any Colour Lip "+
+      "Combo & Gloss, Any colour Eyeshadow & Glitter, Flakes or Any Kind of Eyeshadow Deco",
+  },
+];
+
+export const images =[
+  {
+    img: img1,
   },
   {
-    icon: <BatteryCharging />,
-    text: "Real-Time Preview",
-    description:
-      "Preview your VR application in real-time as you make changes, allowing for quick iterations and adjustments.",
+    img: img2,
   },
   {
-    icon: <PlugZap />,
-    text: "Collaboration Tools",
-    description:
-      "Work together with your team in real-time on VR projects, enabling seamless collaboration and idea sharing.",
+    img: img3,
   },
   {
-    icon: <GlobeLock />,
-    text: "Analytics Dashboard",
-    description:
-      "Gain valuable insights into user interactions and behavior within your VR applications with an integrated analytics dashboard.",
+    img: img4,
+  },
+  {
+    img: img5,
+  },
+  {
+    img: img6,
+  },
+  {
+    img: img7,
+  },
+  {
+    img: img8,
+  },
+  {
+    img: img9,
   },
 ];
 
@@ -122,33 +139,37 @@ export const checklistItems = [
 
 export const pricingOptions = [
   {
-    title: "Free",
+    title: "General Makeup",
     price: "$0",
     features: [
-      "Private board sharing",
-      "5 Gb Storage",
-      "Web Analytics",
-      "Private Mode",
+      "No Make-up soft look: R300",
+      "Natural Glam: R350",
+      "Soft Glam: R400",
+      "Full Glam: R450",
     ],
   },
   {
-    title: "Pro",
+    title: "Bridal Makeup",
     price: "$10",
     features: [
-      "Private board sharing",
-      "10 Gb Storage",
-      "Web Analytics (Advance)",
-      "Private Mode",
+      "Bridal Glam: R550",
+      "Mother of Bride/Groom: R400",
+      "Bridesmaids: R450",
+      "Flower Girl: R200",
+      "Additional Faces: R400",
+      "Groom: R250"
     ],
   },
   {
-    title: "Enterprise",
+    title: "Extras",
     price: "$200",
     features: [
-      "Private board sharing",
-      "Unlimited Storage",
-      "High Performance Network",
-      "Private Mode",
+      "Strip eyelashes: R30",
+      "Shaping and trimming: R110",
+      "Wig installation: R200",
+      "Facial Cleansing: R120",
+      "Eyebrow mapping and tint: R220",
+      "Eyelash tint: R?"
     ],
   },
 ];
