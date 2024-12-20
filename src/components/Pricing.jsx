@@ -1,6 +1,6 @@
 import React from 'react'
 import { pricingOptions } from '../constants'
-import { CheckCircle2, Heart } from 'lucide-react'
+import { Heart } from 'lucide-react'
 
 const Pricing = () => {
     return (

@@ -1,5 +1,4 @@
 import React from 'react'
-import { communityLinks, platformLinks, resourcesLinks } from '../constants';
 
 const Footer = () => {
   return (

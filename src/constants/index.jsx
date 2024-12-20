@@ -1,13 +1,6 @@
-import { BotMessageSquare, Brush, EyeClosed, Heart } from "lucide-react";
-import { Fingerprint } from "lucide-react";
-import { ShieldHalf } from "lucide-react";
-
-import user1 from "../assets/profile-pictures/user1.jpg";
-import user2 from "../assets/profile-pictures/user2.jpg";
-import user3 from "../assets/profile-pictures/user3.jpg";
-import user4 from "../assets/profile-pictures/user4.jpg";
-import user5 from "../assets/profile-pictures/user5.jpg";
-import user6 from "../assets/profile-pictures/user6.jpg";
+import { Brush, EyeClosed, Heart } from "lucide-react";
+import mologadi from "../assets/profile-pictures/Mologadi.jpg";
+import anon from "../assets/profile-pictures/anon.JPG";
 
 import img1 from "../assets/gallery/img (1).jpg";
 import img2 from "../assets/gallery/img (2).jpg";
@@ -18,6 +11,15 @@ import img6 from "../assets/gallery/img (6).jpg";
 import img7 from "../assets/gallery/img (7).jpg";
 import img8 from "../assets/gallery/img (8).jpg";
 import img9 from "../assets/gallery/img (9).jpg";
+import img10 from "../assets/gallery/img (10).jpg";
+import img11 from "../assets/gallery/img (11).jpg";
+import img12 from "../assets/gallery/img (12).jpg";
+import img13 from "../assets/gallery/img (13).jpg";
+import img14 from "../assets/gallery/img (14).jpg";
+import img15 from "../assets/gallery/img (15).jpg";
+import img16 from "../assets/gallery/img (16).jpg";
+import img17 from "../assets/gallery/img (17).jpg";
+import img18 from "../assets/gallery/img (18).jpg";
 
 export const navItems = [
   { label: "Services", href: "#service" },
@@ -28,34 +30,36 @@ export const navItems = [
 
 export const testimonials = [
   {
-    user: "Noluthando Mkhubo",
-    image: img1,
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+    user: "Mologadi Sefara",
+    image: mologadi,
+    text: "\"You indeed made me a Queen🥰😍 Forever greateful💐🌟 May God continue to bless the work of your hands💐🌍\" ",
   },
   {
-    user: "Honeshma Mabunda",
-    image: img2,
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+    user: "Busi",
+    image: anon,
+    text: "\"Thank you so much for the look 🥺❤️❤️ I've been getting compliments the whole day😍🥺. I love ypur work.❤️\"",
   },
   {
-    user: "Lwaluhle Kunene",
-    image: img3,
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+    user: "Anonymous",
+    image: anon,
+    text: "\"Thank you for the facebeat, I loved it! Your work is 💯. You made it special, I enjoyed my day with the look you gave me. ❤️\"",
   },
   {
-    user: "Jane Doe",
-    image: img4,
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+    user: "Anonymous",
+    image: anon,
+    text: "\"Thank you very much for this weekend, everyone was happy with your work, we really looked gorgeous. God bless you! Your work is absolutely beautiful🙏🏻🙏🏻❤️❤️ " +
+    "We are definitely using your services next year for the white wedding.\"",
   },
   {
-    user: "Kristine Wilson",
-    image: img5,
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+    user: "Anonymous",
+    image: anon,
+    text: "\"Sihle was so professional and on time. She took me step by step with the whole process, I am really impressed. I love my look and will definitely recommend and "+
+    "come back. Excellent service! \"",
   },
   {
-    user: "Emily Davis",
-    image: img6,
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+    user: "Anonymous",
+    image: anon,
+    text: "\"Thank you for the fabulous service. I looked amazing!!!😎 \"",
   },
 ];
 
@@ -111,6 +115,33 @@ export const images =[
   },
   {
     img: img9,
+  },
+  {
+    img: img10,
+  },
+  {
+    img: img11,
+  },
+  {
+    img: img12,
+  },
+  {
+    img: img13,
+  },
+  {
+    img: img14,
+  },
+  {
+    img: img15,
+  },
+  {
+    img: img16,
+  },
+  {
+    img: img17,
+  },
+  {
+    img: img18,
   },
 ];
 

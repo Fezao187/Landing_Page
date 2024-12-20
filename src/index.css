@@ -3,6 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@media(prefers-reduced-motion: no-preference){
+  * {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+  }
+}
+
 :root{
   font-family: "Poppins", sans-serif;
   color-scheme: dark;
