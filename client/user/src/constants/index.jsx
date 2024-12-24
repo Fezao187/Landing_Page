@@ -22,10 +22,7 @@ import img17 from "../assets/gallery/img (17).jpg";
 import img18 from "../assets/gallery/img (18).jpg";
 
 export const navItems = [
-  { label: "Services", href: "#service" },
-  { label: "Gallery", href: "#work" },
-  { label: "Pricing", href: "#price" },
-  { label: "Testimonials", href: "#test" },
+  {label: 'Home', href:'/'},
 ];
 
 export const testimonials = [

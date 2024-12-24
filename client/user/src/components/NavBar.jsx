@@ -13,8 +13,8 @@ const NavBar = () => {
             <div className="container px-4 mx-auto relative text-sm">
                 <div className="flex justify-between items-center">
                     <div className="flex items-center flex-shrink-0">
-                        <a href="#top"><img className="h-7 w-50 mr-2" src={logo} alt="logo" /></a>
-                        <a href="#top"><span className="text-xl tracking-tight">LA BELLA</span></a>
+                        <a href="/"><img className="h-7 w-50 mr-2" src={logo} alt="logo" /></a>
+                        <a href="/"><span className="text-xl tracking-tight">LA BELLA</span></a>
                     </div>
                     <ul className="hidden lg:flex ml-14 space-x-12">
                         {navItems?.map((item, index) => (
@@ -24,7 +24,7 @@ const NavBar = () => {
                         ))}
                     </ul>
                     <div className="hidden lg:flex justify-center space-x-12 items-center">
-                        <a href="#" className="bg-gradient-to-r from-pink-500 to-pink-800
+                        <a href="/book/now" className="bg-gradient-to-r from-pink-500 to-pink-800
                     py-2 px-3 rounded-md">
                             Book now
                         </a>
@@ -46,7 +46,7 @@ const NavBar = () => {
                             ))}
                         </ul>
                         <div className="flex space-x-6">
-                            <a href="#" className="py-2 px-3 rounded-md bg-gradient-to-r from-pink-500 to-pink-800">
+                            <a href="/book/now" className="py-2 px-3 rounded-md bg-gradient-to-r from-pink-500 to-pink-800">
                                 Book now
                             </a>
                         </div>

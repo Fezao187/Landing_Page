@@ -17,7 +17,7 @@ const HeroSection = () => {
                 how you feel. <br/>Beauty awakens the soul to act.
             </p>
             <div className="flex justify-center my-10">
-                <a href="#" className="bg-gradient-to-r from-pink-500 to-pink-800 py-3 px-4 mx-3 
+                <a href="/book/now" className="bg-gradient-to-r from-pink-500 to-pink-800 py-3 px-4 mx-3 
                 rounded-md">
                     Book now
                 </a>
