@@ -3,16 +3,16 @@ import emailjs from '@emailjs/browser';
 import { useNavigate } from 'react-router-dom';
 
 const Booking = () => {
-    const serviceId=process.env.REACT_APP_SERVICE_ID;
-    const tempId=process.env.REACT_APP_TEMP_ID;
-    const public_key=process.env.REACT_APP_PUBLIC_KEY;
+    const serviceId = process.env.REACT_APP_SERVICE_ID;
+    const tempId = process.env.REACT_APP_TEMP_ID;
+    const public_key = process.env.REACT_APP_PUBLIC_KEY;
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [surname, setSurname] = useState("");
     const [phone, setPhone] = useState("");
-    const [service,setService]=useState('');
-    
+    const [service, setService] = useState('');
+
     const form = useRef();
     let navigate = useNavigate();
     const sendEnail = async (e) => {
@@ -68,11 +68,31 @@ const Booking = () => {
                             type='number' id='phone' name='phone' value={phone}
                             onChange={(e) => setPhone(e.target.value)} required />
                     </div>
-                    <div className="form-group mb-4">
-                        <label className='ml-1' htmlFor='message'>Service:</label><br />
-                        <textarea className='w-full mt-2 appearance-none bg-transparent 
+                    <div className="form-group mb-4 pb-10 border-b border-neutral-800">
+                        <label className='ml-1' htmlFor='service'>Select an option:</label><br />
+                        {/* <textarea className='w-full mt-2 appearance-none bg-transparent 
                         border border-neutral-900 border-b-pink-500 focus:outline-double' id='service' name='service' rows='4' value={service}
-                            onChange={(e) => setService(e.target.value)} required></textarea>
+                            onChange={(e) => setService(e.target.value)} required></textarea> */}
+                            <select id='service' name="service" className='bg-black border-0 border-b border-pink-500 appearance-none
+                            focus:outline-none focus:ring-0 peer
+                            text-sm focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5'>
+                                <option selected>Choose a service</option>
+                                <option value='softLook'>Soft look: R300</option>
+                                <option value='naturalGlam'>Natural Glam: R350</option>
+                                <option value='softGlam'>Soft Glam: R400</option>
+                                <option value='fullGlam'>Full Glam: R450</option>
+                                <option value='bridalGlam'>Bridal Glam: R550</option>
+                                <option value='motherOfBride'>Mother of Bride/Groom: R400</option>
+                                <option value='bridesmaides'>Bridesmaids: R450</option>
+                                <option value='flowerGirl'>Flower Girl: R200</option>
+                                <option value='groom'>Groom: R250</option>
+                                <option value='stripEylashes'>Strip eyelashes: R30</option>
+                                <option value='shapingAndTrim'>Shaping and trimming: R110</option>
+                                <option value='wigInstall'>Wig installation: R200</option>
+                                <option value='facialCleanse'>Facial Cleansing: R120</option>
+                                <option value='eyebrowMap'>Eyebrow mapping and tint: R220</option>
+                                <option value='eyelashTint'>Eyelash tint: R?</option>
+                            </select>
                     </div>
                     <div className='w-full flex'>
                         <button className='mt-2 sm:mt-3 lg:mt-4 w-28 mx-auto bg-gradient-to-r from-pink-500 to-pink-800
