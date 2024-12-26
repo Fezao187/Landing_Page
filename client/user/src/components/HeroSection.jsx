@@ -4,7 +4,7 @@ import video2 from "../assets/video2.mp4";
 
 const HeroSection = () => {
     return (
-        <div className="flex flex-col items-center mt-6 lg:mt-20">
+        <div className="flex flex-col items-center">
             <h1 id='top' className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
                 La Bella Beauty transformations
                 <span className='bg-gradient-to-r from-pink-500 to-pink-800

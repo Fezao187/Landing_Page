@@ -1,14 +1,12 @@
 import React from 'react'
 import NavBar from './components/NavBar'
-import HeroSection from './components/HeroSection'
-import FeatureSection from './components/FeatureSection';
-import WorkFlow from './components/WorkFlow';
-import Pricing from './components/Pricing';
-import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import Booking from './views/Booking';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Home from './views/Home';
+import Gallery from './views/Gallery';
+import Testimonials from './views/Testimonials';
+import About from './views/About';
 
 const App = () => {
   return (
@@ -19,6 +17,9 @@ const App = () => {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/book/now' element={<Booking />} />
+            <Route path='/gallery' element={<Gallery />} />
+            <Route path='/testimonials' element={<Testimonials />} />
+            <Route path='/about' element={<About />} />
           </Routes>
         </Router>
         <Footer />

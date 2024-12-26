@@ -1,4 +1,4 @@
-import { Brush, EyeClosed, Heart } from "lucide-react";
+import { Brush, EyeClosed, Facebook, Heart, Instagram, Mail, Phone } from "lucide-react";
 import mologadi from "../assets/profile-pictures/Mologadi.jpg";
 import anon from "../assets/profile-pictures/anon.JPG";
 
@@ -22,7 +22,10 @@ import img17 from "../assets/gallery/img (17).jpg";
 import img18 from "../assets/gallery/img (18).jpg";
 
 export const navItems = [
-  {label: 'Home', href:'/'},
+  { label: 'Home', href: '/' },
+  { label: 'Gallery', href: '/gallery' },
+  { label: 'Testimonials', href: '/testimonials' },
+  { label: 'About', href: '/about' },
 ];
 
 export const testimonials = [
@@ -45,13 +48,13 @@ export const testimonials = [
     user: "Anonymous",
     image: anon,
     text: "\"Thank you very much for this weekend, everyone was happy with your work, we really looked gorgeous. God bless you! Your work is absolutely beautiful🙏🏻🙏🏻❤️❤️ " +
-    "We are definitely using your services next year for the white wedding.\"",
+      "We are definitely using your services next year for the white wedding.\"",
   },
   {
     user: "Anonymous",
     image: anon,
-    text: "\"Sihle was so professional and on time. She took me step by step with the whole process, I am really impressed. I love my look and will definitely recommend and "+
-    "come back. Excellent service! \"",
+    text: "\"Sihle was so professional and on time. She took me step by step with the whole process, I am really impressed. I love my look and will definitely recommend and " +
+      "come back. Excellent service! \"",
   },
   {
     user: "Anonymous",
@@ -62,30 +65,30 @@ export const testimonials = [
 
 export const features = [
   {
-    icon: <EyeClosed/>,
+    icon: <EyeClosed />,
     text: "Natural Glam",
     description:
-      "Light coverage foundation, powder highlighting and contouring "+
-      "Eyebrows (wing or straight), Liner and lashes, lined Lipgloss "+
+      "Light coverage foundation, powder highlighting and contouring " +
+      "Eyebrows (wing or straight), Liner and lashes, lined Lipgloss " +
       "No eyeshadow.",
   },
   {
-    icon: <Brush/>,
+    icon: <Brush />,
     text: "Soft Glam",
     description:
-      "Foundation, Highlighting and Contouring, Eyebrows, Lashes, Nude Lip Combo "+
+      "Foundation, Highlighting and Contouring, Eyebrows, Lashes, Nude Lip Combo " +
       "or Gloss, Earth Tones.",
   },
   {
-    icon: <Heart/>,
+    icon: <Heart />,
     text: "Full Glam",
     description:
-      "Foundation, Highlighting and Contouring, Eyebrows, Lashes, Any Colour Lip "+
+      "Foundation, Highlighting and Contouring, Eyebrows, Lashes, Any Colour Lip " +
       "Combo & Gloss, Any colour Eyeshadow & Glitter, Flakes or Any Kind of Eyeshadow Deco",
   },
 ];
 
-export const images =[
+export const images = [
   {
     img: img1,
   },
@@ -202,26 +205,35 @@ export const pricingOptions = [
   },
 ];
 
-export const resourcesLinks = [
-  { href: "#", text: "Getting Started" },
-  { href: "#", text: "Documentation" },
-  { href: "#", text: "Tutorials" },
-  { href: "#", text: "API Reference" },
-  { href: "#", text: "Community Forums" },
+export const Address = [
+  { href: "https://maps.app.goo.gl/ZBeDHJLhk3SkeVAT6", text: "359 Bembo Street" },
+  { href: "https://maps.app.goo.gl/ZBeDHJLhk3SkeVAT6", text: "Mabuya park" },
+  { href: "https://maps.app.goo.gl/ZBeDHJLhk3SkeVAT6", text: "Vosloorus" },
+  { href: "https://maps.app.goo.gl/ZBeDHJLhk3SkeVAT6", text: "1475" },
 ];
 
-export const platformLinks = [
-  { href: "#", text: "Features" },
-  { href: "#", text: "Supported Devices" },
-  { href: "#", text: "System Requirements" },
-  { href: "#", text: "Downloads" },
-  { href: "#", text: "Release Notes" },
+export const followUs = [
+  {
+    href: "https://www.instagram.com/la_bellabeautytransformations/",
+    icon: <Instagram />,
+    text: 'Instagram'
+  },
+  {
+    href: "https://www.facebook.com/makeupyourface",
+    icon: <Facebook />,
+    text: "Facebook"
+  },
 ];
 
-export const communityLinks = [
-  { href: "#", text: "Events" },
-  { href: "#", text: "Meetups" },
-  { href: "#", text: "Conferences" },
-  { href: "#", text: "Hackathons" },
-  { href: "#", text: "Jobs" },
+export const contactUs = [
+  {
+    href: "mailto:siphesihlendabane09@gmail.com",
+    icon: <Mail />,
+    text: "Email"
+  },
+  {
+    href: "tel:0673313980",
+    icon: <Phone />,
+    text: "Call"
+  },
 ];
