@@ -3,18 +3,24 @@ import emailjs from '@emailjs/browser';
 import { useNavigate } from 'react-router-dom';
 
 const Booking = () => {
+    const serviceId=process.env.REACT_APP_SERVICE_ID;
+    const tempId=process.env.REACT_APP_TEMP_ID;
+    const public_key=process.env.REACT_APP_PUBLIC_KEY;
+
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
-    const [subject, setSubject] = useState("");
-    const [message, setMessage] = useState("");
+    const [surname, setSurname] = useState("");
+    const [phone, setPhone] = useState("");
+    const [service,setService]=useState('');
+    
     const form = useRef();
     let navigate = useNavigate();
     const sendEnail = async (e) => {
         e.preventDefault();
 
         emailjs
-            .sendForm('service_20ldcx5', 'template_gn4khzh', form.current, {
-                publicKey: 'h9GXWE5gyfBwLzZWO',
+            .sendForm(serviceId, tempId, form.current, {
+                publicKey: public_key,
             })
             .then(
                 () => {
@@ -44,23 +50,29 @@ const Booking = () => {
                             onChange={(e) => setName(e.target.value)} required />
                     </div>
                     <div className="form-group mb-4">
+                        <label className='ml-1' htmlFor='name'>Surname:</label><br />
+                        <input className='w-full h-10 mt-2 appearance-none bg-transparent 
+                        border border-neutral-900 border-b-pink-500 focus:outline-double' type='text' id='surname' name='surname' value={surname}
+                            onChange={(e) => setSurname(e.target.value)} required />
+                    </div>
+                    <div className="form-group mb-4">
                         <label className='ml-1' htmlFor='email'>Email:</label><br />
                         <input className='w-full h-10 mt-2 appearance-none bg-transparent 
                         border border-neutral-900 border-b-pink-500 focus:outline-double' type='email' id='email' name='email' value={email}
                             onChange={(e) => setEmail(e.target.value)} required />
                     </div>
                     <div className="form-group mb-4">
-                        <label className='ml-1' htmlFor='subject'>Subject:</label><br />
+                        <label className='ml-1' htmlFor='subject'>Phone:</label><br />
                         <input className='w-full h-10 mt-2 appearance-none bg-transparent 
                         border border-neutral-900 border-b-pink-500 focus:outline-double'
-                            type='text' id='subject' name='subject' value={subject}
-                            onChange={(e) => setSubject(e.target.value)} required />
+                            type='number' id='phone' name='phone' value={phone}
+                            onChange={(e) => setPhone(e.target.value)} required />
                     </div>
                     <div className="form-group mb-4">
-                        <label className='ml-1' htmlFor='message'>Message:</label><br />
+                        <label className='ml-1' htmlFor='message'>Service:</label><br />
                         <textarea className='w-full mt-2 appearance-none bg-transparent 
-                        border border-neutral-900 border-b-pink-500 focus:outline-double' id='message' name='message' rows='4' value={message}
-                            onChange={(e) => setMessage(e.target.value)} required></textarea>
+                        border border-neutral-900 border-b-pink-500 focus:outline-double' id='service' name='service' rows='4' value={service}
+                            onChange={(e) => setService(e.target.value)} required></textarea>
                     </div>
                     <div className='w-full flex'>
                         <button className='mt-2 sm:mt-3 lg:mt-4 w-28 mx-auto bg-gradient-to-r from-pink-500 to-pink-800
